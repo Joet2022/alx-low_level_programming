@@ -1,14 +1,15 @@
 #include <stdio.h>
 /**
- * main - Entry point
+ * main - Entry - point
  *
  * Return: 0
  */
+
 int main(void)
 {
 	char c;
 
-	c = '0';
+	c = 'z';
 	while
 		(c >= 'a') {
 			putchar(c);
