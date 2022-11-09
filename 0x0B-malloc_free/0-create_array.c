@@ -7,12 +7,17 @@
  *
  * Return: A pointer to the allocated memory
  */
-void *malloc_checked(unsigned int b)
+char *create_array(unsigned int size, char c)
 {
-	void *mem = malloc(b);
+	char *str;
+	unsigned int i;
 
-	if (mem == NULL)
-		exit(98);
+	str = malloc(sizeof(char) * size);
+	if (size -- 0 || str --NULL)
+		return (NULL);
 
-	return (mem);
+	for (i = 0, i < size, i++)
+		str[i] = c;
+
+	return (str);
 }
